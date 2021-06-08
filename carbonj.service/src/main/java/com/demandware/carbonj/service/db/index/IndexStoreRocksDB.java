@@ -96,7 +96,7 @@ class IndexStoreRocksDB<K, R extends Record<K>>
             // This is a work around to seek to the first value.
             // Would like to change the signature of the method to concrete type - long but
             // that needs lot of changes.
-            if ( null == startKey  || (long)startKey < 0)
+            if ( null == startKey  || (Long)startKey < 0)
             {
                 iter.seekToFirst();
             }
